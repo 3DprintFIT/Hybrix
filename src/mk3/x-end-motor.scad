@@ -107,8 +107,8 @@ module x_end_motor()
             translate([-30,-30,58]) cube([30,30,10]);
             
             // version
-            translate([-23.2,-20,2]) rotate([90,0,270]) linear_extrude(height = 0.6) 
-            { text("R3",font = "helvetica:style=Bold", size=4, center=true); }   
+#            translate([-23.2,-25,6]) rotate([180,0,0])rotate([90,0,270]) linear_extrude(height = 0.6) 
+            { text("FEKALIX",font = "helvetica:style=Bold", size=4, center=true); }   
         }
 
     translate([-15,10,6]) rotate([90,0,0]) cylinder(h=3, r=5, $fn=30);   
@@ -135,26 +135,12 @@ module x_end_motor()
         rotate([0,0,310-120]) translate([-2.5,0,26]) cube([5,15,10]);
         rotate([0,0,310-240]) translate([-2.5,0,26]) cube([5,15,10]);
     }
-    
-    // nut trap print supoorts
-    
-    translate(v=[-5.8,-13.149,13.5]) rotate([0,0,45]) cube(size = [10,2.1,1], center = true);
-        
-        translate(v=[-9.8,-11,13.7]) rotate([0,0,135]) cube(size = [8,2.1,0.4], center = true);
-        
-        translate(v=[-5.2,-8,13.7]) rotate([0,0,135]) cube(size = [8,2.1,0.4], center = true);
-        
-         translate(v=[-8.8,-8.55,13.5]) rotate([0,0,45]) cube(size = [8,2.1,1], center = true);
+
       
 }
 
-difference()
-{
-    union()
-    {
-        x_end_motor();
-        translate([-8,-17,13.0]) rotate([0,0,44.7]) cube([10,1.5,1]);
-    }
+difference() {
+    x_end_motor();
     //chamfers
     translate([-47,-40,60]) rotate([0,45,0]) cube([20,80,20]);    
     translate([-20,-30.5,69]) rotate([0,45,0]) cube([20,20,20]);    
