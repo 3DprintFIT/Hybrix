@@ -1,6 +1,6 @@
 Hybrix
 =======
-Hybrix – a 3D printer inspired by constructions of RebeliX and Prusa MK3. Licensed as GPLv3. 
+Hybrix is a 3D printer inspired by constructions of RebeliX and Prusa MK3. Licensed as GPLv3. 
 
 This is basically a Rebelix with X and Z axis from MK3 as well as MK52 and MK3's extruder.
 
@@ -10,7 +10,11 @@ Make note that this repo combines sources from:
  - https://github.com/prusa3d/Original-Prusa-i3/tree/MK3
  - https://github.com/RepRap4U/RebeliX
 
-![RebeliX](Rebelix_render.png "Preview of assembled printer" )
+
+MMU Ready WIP
+-------
+Hybrix will be fully MMU and MMU2 ready when is finished
+
 
 Build
 =====
